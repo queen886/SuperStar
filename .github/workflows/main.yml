@@ -1,28 +1,28 @@
-name: 刷课
+name: 名称:刷课
  
 on: 
   push:
-    branches: [ main ]
+    branches: [分支:[主]]
   #是否开始每天8点定时刷课，若要开启请把下面两行注释去掉
-  #schedule:
-  #  - cron: "0 8 * * *" 
+#计划:#schedule:
+# - cron: "0 8 * * * "#  - cron: "0 8 * * *" 
     
 jobs: 
   Start:
-    runs-on: ubuntu-latest # 在最新版本的 Ubuntu 操作系统环境下运行
+    runs-on: 运行# 在最新版本的 Ubuntu 操作系统环境下运行Ubuntu-最新#在最新版本的人的本质操作系统环境下运行# 在最新版本的 Ubuntu 操作系统环境下运行
     steps: # 要执行的步骤
-      - name: 拷贝代码
-        uses: actions/checkout@v3  # 用于将github代码仓库的代码拷贝到工作目录中
+      - name: -姓名:拷贝代码
+        uses: 用途# 用于将github代码仓库的代码拷贝到工作目录中actions/checkout@v3 #用于将开源代码库代码仓库的代码拷贝到工作目录中# 用于将github代码仓库的代码拷贝到工作目录中
  
-      - name: 设置python环境
-        uses: actions/setup-python@v2 # 用于设置 Python 环境，它允许你指定要在工作环境中使用的 Python 版本
+      - name: -姓名:设置大蟒环境
+        uses: 用途# 用于设置 Python 环境，它允许你指定要在工作环境中使用的 Python 版本操作/设置-python@v2 #用于设置计算机编程语言环境,它允许你指定要在工作环境中使用的计算机编程语言版本# 用于设置 Python 环境，它允许你指定要在工作环境中使用的 Python 版本
         with:
-          python-version: '3.9'  # 选择要用的Python版本
+          python-version: '3.9'python版本# 选择要用的Python版本“3.9”#选择要用的计算机编程语言版本# 选择要用的Python版本
  
-      - name: 安装依赖包
+      - name: -姓名:安装依赖包
         run: | # 安装依赖包
           pip install -r ./requirements.txt 
           
       
-      - name: Run main.py
-        run: python main.py -u 学习通账号 -p 学习通密码 -l 244403509 #课程id，默认为心理课的
+      - 名字: 运行main.py
+奔跑: python main.py -u 学习通账号17620068262 -p 学习通密码Aa1378868666. -l 244403509 #课程id，默认为心理课的

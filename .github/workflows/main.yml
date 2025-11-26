@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main ]
   #是否开始每天8点定时刷课，若要开启请把下面两行注释去掉
-  #schedule:
-  #  - cron: "0 8 * * *" 
+日程安排:
+    - 时间单位: "0 8 * * *" 
     
 jobs: 
   Start:
@@ -24,5 +24,5 @@ jobs:
           pip install -r ./requirements.txt 
           
       
-      - name: Run main.py
-        run: python main.py -u 学习通账号 -p 学习通密码 -l 244403509 #课程id，默认为心理课的
+      - 名字: 运行main.py
+奔跑: python main.py -u 学习通账号17620068262 -p 学习通密码Aa1378868666. -l 244403509 #课程id，默认为心理课的
